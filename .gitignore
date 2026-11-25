@@ -1,0 +1,7 @@
+__pycache__/
+.render-cache/
+*.pyc
+.DS_Store
+review/build-summary.json
+.venv/
+Differential_Equations.html
