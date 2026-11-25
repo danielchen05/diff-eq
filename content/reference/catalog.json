@@ -1,0 +1,12 @@
+[
+ {"id":"basics","title":"Foundations","summary":"Classification, direction fields, initial values, and the calculus used throughout the course."},
+ {"id":"first-order","title":"First-order ODEs","summary":"Separation of variables, integrating factors, and exact equations."},
+ {"id":"qualitative","title":"Existence and phase lines","summary":"Existence and uniqueness, autonomous equations, equilibrium stability, and bifurcations."},
+ {"id":"homogeneous","title":"Second-order homogeneous ODEs","summary":"Characteristic roots, the Wronskian, Abel's formula, and reduction of order."},
+ {"id":"nonhomogeneous","title":"Second-order nonhomogeneous ODEs","summary":"Undetermined coefficients, resonance, and variation of parameters."},
+ {"id":"higher-order-odes","title":"Higher-order ODEs","summary":"Characteristic equations, root multiplicity, and undetermined coefficients for higher-order forcing."},
+ {"id":"systems","title":"Linear systems","summary":"System conversion, eigenvalues and eigenvectors, fundamental matrices, and phase portraits."},
+ {"id":"nonlinear","title":"Nonlinear systems","summary":"Equilibria, linearization, periodic trajectories, and limit cycles."},
+ {"id":"laplace","title":"Laplace transforms","summary":"Derivative transforms, second-order initial value problems, and unit step functions."},
+ {"id":"numerical","title":"Euler’s method","summary":"Tangent-line approximation and the update from one numerical point to the next."}
+]

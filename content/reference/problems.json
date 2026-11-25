@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "classify",
+    "topic": "basics",
+    "unit": "classification",
+    "prompt": "For each equation, decide whether it is an ODE, give its order, and determine whether it is linear.\n\n1. $\\sin t\\,y'+\\ln t\\,y=\\tan(e^t)$\n2. $y''+ty'+\\sin y=0$\n3. $y''y+y'=0$\n4. $y'''+y''-ty'=1$",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week1.tex · Groupwork: Practice Problems · 1(a–d)",
+    "credit": ""
+  },
+  {
+    "id": "integral-1",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Evaluate $\\int \\frac{\\sin t}{\\cos^3 t}\\,dt$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week1.tex · Math Pre-requisites / Practice Questions · 1",
+    "credit": ""
+  },
+  {
+    "id": "integral-2",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Evaluate $\\int te^{3t}\\,dt$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week1.tex · Math Pre-requisites / Practice Questions · 2",
+    "credit": ""
+  },
+  {
+    "id": "integral-3",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Evaluate $\\int \\frac{t}{\\sqrt{4t^2+9}}\\,dt$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week1.tex · Math Pre-requisites / Practice Questions · 3",
+    "credit": ""
+  },
+  {
+    "id": "integral-4",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Evaluate $\\int e^{-t}\\sin t\\,dt$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week1.tex · Math Pre-requisites / Practice Questions · 4",
+    "credit": ""
+  },
+  {
+    "id": "integral-5",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Evaluate $\\int te^t\\,dt$ using integration by parts.",
+    "solution": "Use integration by parts with $u=t$ and $dv=e^t\\,dt$. Then $du=dt$ and $v=e^t$, so\n\n$$\\int te^t\\,dt=te^t-\\int e^t\\,dt=te^t-e^t+C.$$",
+    "solution_kind": "full",
+    "source": "F24_Section_Notes/Week1.tex · Groupwork: Practice Problems · 2",
+    "credit": ""
+  },
+  {
+    "id": "field",
+    "topic": "basics",
+    "unit": "classification",
+    "prompt": "Sketch a direction field for $y'=t-y$ on $[-2,2]\\times[-2,2]$. Draw an example integral curve.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week1.tex · Lecture Content Review / Practice Problems · Direction field on [-2,2]²",
+    "credit": ""
+  },
+  {
+    "id": "sep-square",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=ty^2$. Sketch the direction field.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week1.tex · Groupwork: Practice Problems · 3(a)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "sep-ratio",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=\\frac{y}{t}$. Sketch the direction field.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week1.tex · Groupwork: Practice Problems · 3(b)",
+    "credit": ""
+  },
+  {
+    "id": "sep-root",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=-\\frac{4t}{y}$. Identify the method you use.",
+    "solution": "Separate the variables on an interval where $y\\ne0$:\n\n$$y\\,dy=-4t\\,dt,\\qquad \\frac{y^2}{2}=-2t^2+C.$$\n\nAbsorb the factor of two into the constant to get $y^2=C-4t^2$. Each real branch is defined where $C-4t^2>0$.",
+    "solution_kind": "full",
+    "source": "F24_Section_Notes/Week2.tex · Groupwork · 1",
+    "credit": ""
+  },
+  {
+    "id": "sep-toy",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=2ty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week2.tex · 1st Order ODE Review / Toy Example 1 (Separable) · Separable example",
+    "credit": ""
+  },
+  {
+    "id": "sep-initial",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=\\frac{y}{t+1},\\quad y(0)=2$.",
+    "solution": "Separate and integrate:\n\n$$\\frac{dy}{y}=\\frac{dt}{t+1},\\qquad \\ln|y|=\\ln|t+1|+C.$$\n\nThus $y=C(t+1)$. The initial value gives $C=2$, so $y=2(t+1)$ on $t>-1$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week2.tex · Practice · 1",
+    "credit": ""
+  },
+  {
+    "id": "sep-implicit",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=\\frac{t}{1+y^2},\\quad y(0)=0$.",
+    "solution": "Move $1+y^2$ to the left and integrate:\n\n$$(1+y^2)\\,dy=t\\,dt,\\qquad y+\\frac{y^3}{3}=\\frac{t^2}{2}+C.$$\n\nAt $(0,0)$ the integration constant is zero. The implicit solution is $y+\\frac{y^3}{3}=\\frac{t^2}{2}$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week2.tex · Practice · 4",
+    "credit": ""
+  },
+  {
+    "id": "sep-tan",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=t(1+y^2)$, $y(0)=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 2",
+    "credit": "",
+    "hint": "Recall the derivative of inverse tangent."
+  },
+  {
+    "id": "sep-quadratic",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $(1+t^2)y'=ty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 3",
+    "credit": ""
+  },
+  {
+    "id": "sep-reciprocal",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Solve $y'=\\frac{t}{y}+ty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 7",
+    "credit": ""
+  },
+  {
+    "id": "not-separable",
+    "topic": "first-order",
+    "unit": "separation",
+    "prompt": "Is $(y+t)y'=y$ separable in $(t,y)$? Solve only if it is.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 9",
+    "credit": ""
+  },
+  {
+    "id": "if-toy",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $y'+y=e^t$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week2.tex · 1st Order ODE Review / Toy Example 2 (Integrating Factor) · Linear example",
+    "credit": ""
+  },
+  {
+    "id": "if-trig",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "On $t>0$, solve $y'+\\frac{2}{t}y=\\frac{\\sin t}{t^2}$.",
+    "solution": "The coefficient of $y$ is $\\frac{2}{t}$, so on $t>0$ the integrating factor is $\\mu=e^{\\int \\frac{2}{t}\\,dt}=t^2$. Multiplying gives\n\n$$(t^2y)'=\\sin t,\\qquad t^2y=-\\cos t+C.$$\n\nTherefore $y(t)=\\frac{C-\\cos t}{t^2}$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week2.tex · Practice · 2",
+    "credit": ""
+  },
+  {
+    "id": "if-resonance",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $y'-y=te^t$.",
+    "solution": "The coefficient of $y$ is $-1$, so use $\\mu=e^{-t}$. The left side becomes a product derivative:\n\n$$(e^{-t}y)'=t,\\qquad e^{-t}y=\\frac{t^2}{2}+C.$$\n\nHence $y=e^t\\!\\left(\\frac{t^2}{2}+C\\right)$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week2.tex · Practice · 3",
+    "credit": ""
+  },
+  {
+    "id": "if-original",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $ty'-2y=t^3e^{-2t}$. Identify the method you use.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week2.tex · Groupwork · 4",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "if-affine",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $2y'+y=3t$. Identify the method you use.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week2.tex · Groupwork · 5",
+    "credit": ""
+  },
+  {
+    "id": "if-gaussian",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $2y'+4ty=2te^{-t^2}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 4",
+    "credit": ""
+  },
+  {
+    "id": "if-polynomial",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $ty'-y=t^3$, $y(1)=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 5",
+    "credit": ""
+  },
+  {
+    "id": "if-log",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $t^2y'+ty=\\ln t$, $t>0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 6",
+    "credit": ""
+  },
+  {
+    "id": "if-exp-polynomial",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "On $t>0$, solve $y'+\\frac{2}{t}y=t^2 e^{-t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 8",
+    "credit": ""
+  },
+  {
+    "id": "if-ivp-one",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Solve $y'-y=te^t$, $y(0)=1$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Practice Problems · 10",
+    "credit": ""
+  },
+  {
+    "id": "quiz-integrating",
+    "topic": "first-order",
+    "unit": "integrating-factor",
+    "prompt": "Consider $ty'-2y=t^4e^{-5t}$.\n\n1. Normalize the equation and find two different integrating factors $\\mu_1$ and $\\mu_2$.\n2. Use $\\mu_1$ to solve the IVP with $y\\!\\left(-\\frac{1}{5}\\right)=0$.\n3. With your $\\mu_2$, verify that $\\bigl(t^3e^{-5t}\\mu_2+\\frac{2\\mu_2y}{t}\\bigr)\\,dt-\\mu_2\\,dy=0$ is exact and solve it as an exact equation.\n4. Sketch the solution from part 2 on the interval containing the initial point.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Quiz1.tex · AS.110.302 Quiz 1 Fall 2024 · 1–4, one connected question",
+    "credit": "AS.110.302 · Fall 2024 Quiz 1"
+  },
+  {
+    "id": "exist-sqrt",
+    "topic": "qualitative",
+    "unit": "existence",
+    "prompt": "For $y'=\\sqrt{t+y}$, does a two-sided local solution exist through $y(0)=0$? Is it unique? Answer the same questions for $y(-1)=1$.",
+    "solution": "At both initial points, $t+y=0$, on the boundary of the real domain. There is no open rectangle around either point on which $\\sqrt{t+y}$ is real, so the usual local existence theorem does not apply.\n\nTo decide existence directly, put $z=t+y$. At either initial time $t_0$ we have $z(t_0)=0$ and $z'(t_0)=1+\\sqrt{z(t_0)}=1$. It follows that $z(t_0+h)=h+o(h)<0$ for sufficiently small negative $h$. This contradicts $z\\ge0$. Neither initial condition has a two-sided real solution.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part A: Existence and Uniqueness · 1(a,b)",
+    "credit": ""
+  },
+  {
+    "id": "exist-singular",
+    "topic": "qualitative",
+    "unit": "existence",
+    "prompt": "For $y'=\\frac{y}{t-2}$, determine whether a local solution exists and is unique for each initial condition: $y(2)=1$ and $y(0)=-3$.",
+    "solution": "At $(2,1)$ the right-hand side is undefined, so a classical solution through that point cannot exist.\n\nAt $(0,-3)$, both $f(t,y)=\\frac{y}{t-2}$ and $f_y=\\frac{1}{t-2}$ are continuous nearby. The local existence–uniqueness theorem gives a unique solution. The normalized linear equation has continuous coefficients on $(-\\infty,2)$, the interval containing $0$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part A: Existence and Uniqueness · 2(a,b)",
+    "credit": ""
+  },
+  {
+    "id": "exist-cos",
+    "topic": "qualitative",
+    "unit": "existence",
+    "prompt": "For $y'=e^t\\cos y$, determine whether a local solution exists and is unique for each initial condition: $y(0)=\\frac{\\pi}{2}$ and $y(1)=0$.",
+    "solution": "Here $f(t,y)=e^t\\cos y$ and $f_y=-e^t\\sin y$ are continuous around either initial point. The local existence–uniqueness theorem gives a unique solution for each.\n\nFor $y(0)=\\frac{\\pi}{2}$ the constant solution works. For either initial value, $|y'|\\le e^t$ bounds the total change of $y$ on every finite time interval, so the solution extends to every real $t$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part A: Existence and Uniqueness · 3(a,b)",
+    "credit": ""
+  },
+  {
+    "id": "exist-log",
+    "topic": "qualitative",
+    "unit": "existence",
+    "prompt": "For $y'=\\ln\\!\\left(\\frac{1}{t}-y^2\\right)$, determine whether a local solution exists and is unique for each initial condition: (a) $y(1)=-2$, (b) $y(0)=3$, (c) $y(1)=\\frac{1}{2}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week4.tex · Practice Problems / Existence and Uniqueness · (a–c)",
+    "credit": "Fall 2023 Quiz 1 · Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "phase-z",
+    "topic": "qualitative",
+    "unit": "phase-lines",
+    "prompt": "For $z'=z(z-1)(2-z)$, classify all equilibria and determine the forward behavior for $z(0)=-0.5,0.5,3$. Sketch the phase line.",
+    "solution": "The equilibria are $0,1,2$. From left to right, the signs of $z(z-1)(2-z)$ on the four intervals are $+,-,+,-$. The arrows point toward $0$ and $2$ and away from $1$. Thus $0$ and $2$ are stable, and $1$ is unstable.\n\nStarting at $-0.5$ gives an increasing solution tending to $0$. Starting at $0.5$ gives a decreasing solution tending to $0$. From $3$ the solution decreases to $2$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part B: Autonomous ODEs and Phase Lines · 1(a–c)",
+    "credit": ""
+  },
+  {
+    "id": "phase-u",
+    "topic": "qualitative",
+    "unit": "phase-lines",
+    "prompt": "For $u'=(u^2+1)(u-4)$, classify all equilibria and determine the forward behavior for $u(0)=0,2,6$. Sketch the phase line.",
+    "solution": "Since $u^2+1$ is positive, the only equilibrium is $4$. The sign of $u'$ is negative on $u<4$ and positive on $u>4$. The phase line points away from $4$ on both sides, so $4$ is unstable.\n\nFrom $0$ or $2$, the solution decreases to $-\\infty$ in finite forward time. From $6$, it increases to $+\\infty$ in finite forward time.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part B: Autonomous ODEs and Phase Lines · 2(a–c)",
+    "credit": ""
+  },
+  {
+    "id": "phase-p",
+    "topic": "qualitative",
+    "unit": "phase-lines",
+    "prompt": "For $P'=P(5-P)(P+2)$, classify all equilibria and determine the forward behavior for $P(0)=1,6,-3$. Sketch the phase line.",
+    "solution": "The equilibria are $-2,0,5$. From left to right the signs of $P(5-P)(P+2)$ are $+,-,+,-$. The arrows point toward $-2$ and $5$ and away from $0$, so $-2$ and $5$ are stable and $0$ is unstable.\n\nFrom $1$, the solution increases to $5$. From $6$, it decreases to $5$. From $-3$, it increases to $-2$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week3.tex · Practice Problems / Part B: Autonomous ODEs and Phase Lines · 3(a–c)",
+    "credit": ""
+  },
+  {
+    "id": "bif-cubic",
+    "topic": "qualitative",
+    "unit": "bifurcations",
+    "prompt": "For $x'=(x-1)(x^2+c)$, draw the phase line at $c=-3$ and classify every equilibrium. Draw the bifurcation diagram with stability and all bifurcation values. For $c=-30$, describe the long-term behavior when $x(\\pi)=-2$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week4.tex · Practice Problems / Bifurcation · (a–c)",
+    "credit": ""
+  },
+  {
+    "id": "bif-shift",
+    "topic": "qualitative",
+    "unit": "bifurcations",
+    "prompt": "For $x'=(x+2)(x^2-c)$, draw the phase line at $c=4$ and classify every equilibrium. Draw the bifurcation diagram with stability and all bifurcation values. For $c=-1$, describe the forward behavior from $x(0)=3$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week4.tex · Practice Problems · (a–c)",
+    "credit": ""
+  },
+  {
+    "id": "bif-pitchfork",
+    "topic": "qualitative",
+    "unit": "bifurcations",
+    "prompt": "For $x'=cx-x^3$, find all equilibria as functions of $c$. Draw the bifurcation diagram and classify the bifurcation at $c=0$. For $c=2$, describe the long-term behavior from $x(0)=-1$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week4.tex · Practice Problems · (a–c)",
+    "credit": ""
+  },
+  {
+    "id": "bif-quadratic",
+    "topic": "qualitative",
+    "unit": "bifurcations",
+    "prompt": "For $x'=x^2-2x+c$, sketch all qualitatively different graphs of the right-hand side as $c$ varies. Find all bifurcation values and sketch a bifurcation diagram.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S25_Section_Notes/Week5.tex · Practice Problems / Phase Lines and Bifurcation Diagrams · PILOT 3, 2023",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection · Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "exact-basic",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "Check exactness and solve $2t+y^2+2tyy'=0$. Identify the method you use.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week2.tex · Groupwork · 2",
+    "credit": ""
+  },
+  {
+    "id": "exact-b",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "Check exactness and solve $ty^2+bt^2y+(t+y)t^2y'=0$. Determine $b$ first. Identify the method you use.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week2.tex · Groupwork · 3",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "exact-poly",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "Check exactness and solve $(2ty+3)\\,dt+(t^2+4y)\\,dy=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week4.tex · Practice Problems · (a,b)",
+    "credit": ""
+  },
+  {
+    "id": "exact-trig",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "Check exactness and solve $(y+e^t)\\,dt+(t+\\cos y)\\,dy=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week4.tex · Practice Problems · (a,b)",
+    "credit": ""
+  },
+  {
+    "id": "exact-param",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "For which values of $c$ is $(cy+2t)\\,dt+(ct+3y)\\,dy=0$ exact? Solve the equation for those values.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week4.tex · Practice Problems · (a,b)",
+    "credit": ""
+  },
+  {
+    "id": "w-trig",
+    "topic": "homogeneous",
+    "unit": "wronskian",
+    "prompt": "A second-order linear homogeneous ODE has continuous normalized coefficients on $\\mathbb R$ and solutions $y_1=\\sin t$ and $y_2=\\cos t$. Calculate their Wronskian and decide whether they form a fundamental set.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week5.tex · Practice Problems · 1(a)",
+    "credit": ""
+  },
+  {
+    "id": "w-dependent",
+    "topic": "homogeneous",
+    "unit": "wronskian",
+    "prompt": "A second-order linear homogeneous ODE has continuous normalized coefficients on $\\mathbb R$ and solutions $y_1=e^{5t}$ and $y_2=10e^{5t}$. Calculate their Wronskian and decide whether they form a fundamental set.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week5.tex · Practice Problems · 1(b)",
+    "credit": ""
+  },
+  {
+    "id": "w-exponentials",
+    "topic": "homogeneous",
+    "unit": "wronskian",
+    "prompt": "Determine whether $e^{2t}$ and $e^{-2t}$ are linearly independent on $(-\\infty,\\infty)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / Linear Independence and Wronskians · 1",
+    "credit": ""
+  },
+  {
+    "id": "w-repeated",
+    "topic": "homogeneous",
+    "unit": "wronskian",
+    "prompt": "For $y''-4y'+4y=0$, use the Wronskian to verify that $e^{2t}$ and $te^{2t}$ are linearly independent.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / Linear Independence and Wronskians · 2",
+    "credit": ""
+  },
+  {
+    "id": "algebra",
+    "topic": "systems",
+    "unit": "matrices",
+    "prompt": "Use a matrix to solve $3x+5y=1$, $6x+3y=9$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week5.tex · Practice Problems · 2",
+    "credit": ""
+  },
+  {
+    "id": "reconstruct-2",
+    "topic": "homogeneous",
+    "unit": "complex-roots",
+    "prompt": "Find a constant-coefficient second-order ODE with general solution $y=e^{2t}(C_1\\cos 5t+C_2\\sin 5t)$. If $C_1=2,C_2=4$, find $y(0),y'(0)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week5.tex · Practice Problems / Quiz Practice Problems · 3, including initial data",
+    "credit": ""
+  },
+  {
+    "id": "reconstruct-4",
+    "topic": "homogeneous",
+    "unit": "complex-roots",
+    "prompt": "Find a constant-coefficient second-order ODE with general solution $y=e^{4t}(C_1\\cos 2t+C_2\\sin 2t)$. If $C_1=2,C_2=4$, find $y(0),y'(0)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Practice Problems · 1, including initial data",
+    "credit": ""
+  },
+  {
+    "id": "hom-original",
+    "topic": "homogeneous",
+    "unit": "real-roots",
+    "prompt": "Solve $y''+y'-6y=0$. Use $y(0)=6$, $y'(0)=-1$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week5.tex · Practice Problems / Quiz Practice Problems · 4",
+    "credit": ""
+  },
+  {
+    "id": "hom-ivp",
+    "topic": "homogeneous",
+    "unit": "real-roots",
+    "prompt": "Solve $y''-5y'+6y=0$. Use $y(0)=2$, $y'(0)=1$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / 2nd Order Homogeneous Constant-Coefficient ODEs · 1",
+    "credit": ""
+  },
+  {
+    "id": "hom-negative",
+    "topic": "homogeneous",
+    "unit": "real-roots",
+    "prompt": "Solve $y''+7y'+12y=0$. Classify the characteristic roots and identify the solution type.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / 2nd Order Homogeneous Constant-Coefficient ODEs · 2",
+    "credit": ""
+  },
+  {
+    "id": "hom-complex",
+    "topic": "homogeneous",
+    "unit": "complex-roots",
+    "prompt": "Solve $y''+2y'+5y=0$. Express the general solution in real form.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / 2nd Order Homogeneous Constant-Coefficient ODEs · 3",
+    "credit": ""
+  },
+  {
+    "id": "hom-double",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Solve $y''-6y'+9y=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / 2nd Order Homogeneous Constant-Coefficient ODEs · 4",
+    "credit": ""
+  },
+  {
+    "id": "hom-triple",
+    "topic": "higher-order-odes",
+    "unit": "higher-order",
+    "prompt": "Solve $y^{(3)}-3y''+3y'-y=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week10.tex · Practice Problems / Higher Order ODE · 1",
+    "credit": ""
+  },
+  {
+    "id": "verify-repeated",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Verify $e^{3t},te^{3t}$ solve $y''-6y'+9y=0$ and form a fundamental set.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week5.tex · Practice / 2nd Order Homogeneous Constant-Coefficient ODEs · 5, referring to 4",
+    "credit": ""
+  },
+  {
+    "id": "reduction-linear",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Given $y_1(t)=t$, solve $t^2y''+2ty'-2y=0$ on an interval avoiding $0$. Which method uses the given solution?",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Practice Problems · 2",
+    "credit": "2023 Quiz 2"
+  },
+  {
+    "id": "reduction-cubic",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Given $y_1(t)=t^3$, find the general solution of $t^2y''+ty'-9y=0$ on any interval avoiding $0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Practice Problems · 3",
+    "credit": ""
+  },
+  {
+    "id": "reduction-square",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Given $y_1(t)=t^2$ on $(0,\\infty)$, find a second independent solution of $t^2y''-3ty'+4y=0$ and write the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Review / Reduction of Order · Example on (0,∞)",
+    "credit": ""
+  },
+  {
+    "id": "reduction-exp",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Given $y_1(t)=e^t$, find a fundamental set for $(t-1)y''-ty'+y=0$ on $t>1$. You may leave integrals unevaluated.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §2.1, fundamental set; unevaluated integrals allowed",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection · Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "guess-a1",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-2y'-3y=3 e^{2t}$. A homogeneous basis is $e^{3t},e^{-t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week7.tex · Review - 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 1",
+    "credit": ""
+  },
+  {
+    "id": "guess-a2",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-2y'-3y=3 \\sin(3t)$. A homogeneous basis is $e^{3t},e^{-t}$. Find the particular solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week7.tex · Review - 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 2",
+    "credit": ""
+  },
+  {
+    "id": "guess-a3",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-2y'-3y=4 e^{-t}$. A homogeneous basis is $e^{3t},e^{-t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week7.tex · Review - 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 3",
+    "credit": ""
+  },
+  {
+    "id": "guess-a4",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-4y'+4y=12 e^{2t}$. A homogeneous basis is $e^{2t},te^{2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week7.tex · Review - 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 4",
+    "credit": ""
+  },
+  {
+    "id": "guess-a5",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-4y'+4y=3 t^{3} e^{2t}$. A homogeneous basis is $e^{2t},te^{2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week7.tex · Review - 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 5",
+    "credit": ""
+  },
+  {
+    "id": "guess-b1",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''+y=\\cos(2t)$. A homogeneous basis is $\\cos t,\\sin t$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Preview: 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 1",
+    "credit": ""
+  },
+  {
+    "id": "guess-b2",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-y=e^{t}$. A homogeneous basis is $e^t,e^{-t}$. Find the particular solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Preview: 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 2",
+    "credit": ""
+  },
+  {
+    "id": "guess-b3",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-3y'+2y=t e^{2t}$. A homogeneous basis is $e^t,e^{2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Preview: 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 3",
+    "credit": ""
+  },
+  {
+    "id": "guess-b4",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''+4y=\\sin(2t)$. A homogeneous basis is $\\cos(2t),\\sin(2t)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Preview: 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 4",
+    "credit": ""
+  },
+  {
+    "id": "guess-b5",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-6y'+9y=t^{2} e^{3t}$. A homogeneous basis is $e^{3t},te^{3t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Preview: 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 5",
+    "credit": ""
+  },
+  {
+    "id": "guess-c1",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''+4y=\\cos(3t)$. A homogeneous basis is $\\cos(2t),\\sin(2t)$. For extra practice, find the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F26_Section_Notes/Week6.tex · 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 1",
+    "credit": ""
+  },
+  {
+    "id": "guess-c2",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-4y=e^{-2t}$. A homogeneous basis is $e^{2t},e^{-2t}$. For extra practice, find the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F26_Section_Notes/Week6.tex · 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 2",
+    "credit": ""
+  },
+  {
+    "id": "guess-c3",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-5y'+6y=t e^{3t}$. A homogeneous basis is $e^{2t},e^{3t}$. For extra practice, find the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F26_Section_Notes/Week6.tex · 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 3",
+    "credit": ""
+  },
+  {
+    "id": "guess-c4",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''+9y=\\sin(3t)$. A homogeneous basis is $\\cos(3t),\\sin(3t)$. For extra practice, find the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F26_Section_Notes/Week6.tex · 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 4",
+    "credit": ""
+  },
+  {
+    "id": "guess-c5",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Choose a trial form for a particular solution of $y''-8y'+16y=t^{2} e^{4t}$. A homogeneous basis is $e^{4t},te^{4t}$. For extra practice, find the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F26_Section_Notes/Week6.tex · 2nd Order Non-Homogeneous / Method of Undetermined Coefficients / Undetermined Coefficients Guess Practice · 5",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-data",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''-6y'+9y=18 e^{3t}$. Use $y(0)=1$, $y'(0)=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week6.tex · Practice Problems · 4",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-exp",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''-3y'+2y=e^{2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 1",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-trig",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''+4y=2 t + 3 \\cos(2t)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 2",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-double",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''-2y'+y=e^{t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 3",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-decay",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''+2y'+y=e^{-t} \\sin t$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 5",
+    "credit": ""
+  },
+  {
+    "id": "nonhom-triple",
+    "topic": "higher-order-odes",
+    "unit": "higher-order-forcing",
+    "prompt": "For $y'''-3y''+3y'-y=e^t$, find the homogeneous solution from the characteristic equation, determine a particular solution, and write the general solution.",
+    "solution": "**Characteristic equation.** Substituting $y=e^{rt}$ gives $r^3-3r^2+3r-1=(r-1)^3=0$. The triple root $r=1$ gives $y_h=e^t(C_1+C_2t+C_3t^2)$.\n\n**Undetermined coefficients.** Try $Ae^t$ for the forcing $e^t$. It repeats a term of $y_h$. Multiplying by $t$ gives $Ate^t$, then $At^2e^t$, both still homogeneous. One more factor of $t$ gives the first independent trial, $Y=At^3e^t$. With $Y=e^t v$, the left side simplifies to $e^t v'''$. Here $v=At^3$, so substitution gives $6Ae^t=e^t$ and $A=\\frac16$.\n\nAdd the particular and homogeneous solutions.\n\n$$y(t)=e^t\\left(C_1+C_2t+C_3t^2+\\frac{t^3}{6}\\right).$$",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 6(a–c), including characteristic-polynomial hint",
+    "credit": "",
+    "hint": "$(r-1)^3=r^3-3r^2+3r-1$."
+  },
+  {
+    "id": "nonhom-sum",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''-2y'+y=t e^{t} + 4$. Which steps does your method require?",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week8.tex · Second Order Practice · 2",
+    "credit": ""
+  },
+  {
+    "id": "variation-tan",
+    "topic": "nonhomogeneous",
+    "unit": "variation",
+    "prompt": "Solve $2y''+2y=2\\tan t$, $|t|<\\frac{\\pi}{2}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week7.tex · Practice Problems · 4, including normalization hint",
+    "credit": "",
+    "hint": "Normalize the equation first."
+  },
+  {
+    "id": "higher-guess",
+    "topic": "higher-order-odes",
+    "unit": "higher-order-forcing",
+    "prompt": "Choose a trial form for a particular solution of $y'''-3y''+3y'-y=e^t+\\sin t+t$ using undetermined coefficients.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week10.tex · Practice Problems / Higher Order ODE · 2; trial form only",
+    "credit": ""
+  },
+  {
+    "id": "divide-x",
+    "topic": "nonhomogeneous",
+    "unit": "variation",
+    "prompt": "Solve $ty''+2ty'+ty=e^{-t}$ on an interval avoiding $0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §2.3, original unnormalized equation, x≠0",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection · Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "shift-euler",
+    "topic": "homogeneous",
+    "unit": "repeated-roots",
+    "prompt": "Solve $3(t+6)^2y''+25(t+6)y'-16y=0$ on an interval not containing $-6$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §4.3",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "construct-ivp",
+    "topic": "homogeneous",
+    "unit": "real-roots",
+    "prompt": "Construct a second-order homogeneous constant-coefficient IVP whose solution is $y=4e^{3t}-e^{-2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_Packet.pdf · §3.3, PILOT 4",
+    "credit": "Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "pilot-oscillation",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "For $x''+2x'+5x=4e^{-t}\\cos(2t)$, outline the solution steps first. Then solve the IVP with $x(0)=1$, $x'(0)=0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §2.2, sketch steps; no initial conditions",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection · Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "pilot-two-exp",
+    "topic": "nonhomogeneous",
+    "unit": "undetermined",
+    "prompt": "Solve $y''-y'-2y=\\frac{e^{2t}}{2} + \\frac{e^{-2t}}{2}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_Packet.pdf · §3.3, PILOT 5, second equation",
+    "credit": "Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "pilot-third",
+    "topic": "higher-order-odes",
+    "unit": "higher-order-forcing",
+    "prompt": "Solve $y^{(3)}-4y'=e^{-2t}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_Packet.pdf · §3.3, PILOT 8",
+    "credit": "Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "convert-forced",
+    "topic": "systems",
+    "unit": "conversion",
+    "prompt": "Transform $y''-3y'+2y=\\sin t$ into a first-order system.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week9.tex · Practice / 1 · 1",
+    "credit": ""
+  },
+  {
+    "id": "convert-variable",
+    "topic": "systems",
+    "unit": "conversion",
+    "prompt": "Transform $t^2y''+ty'+\\left(t^2-\\frac{1}{4}\\right)y=0$ into an explicit first-order system on either interval $t<0$ or $t>0$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week8.tex · Basic Concepts of 1st Order System Practice · 1",
+    "credit": ""
+  },
+  {
+    "id": "convert-second",
+    "topic": "systems",
+    "unit": "conversion",
+    "prompt": "Transform $u''+3u'+u=0$ into a first-order system.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.1(a)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "convert-fifth",
+    "topic": "systems",
+    "unit": "conversion",
+    "prompt": "Transform $u^{(5)}+3u^{(3)}+u''+t=0$ into a first-order system.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.1(b)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "system-real",
+    "topic": "systems",
+    "unit": "real-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}4 & 1\\\\2 & 3\\end{bmatrix}\\mathbf x$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week9.tex · Practice / 2 · 2",
+    "credit": ""
+  },
+  {
+    "id": "system-complex",
+    "topic": "systems",
+    "unit": "complex-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}3 & -13\\\\5 & 1\\end{bmatrix}\\mathbf x$. Find a complex eigenpair and identify $\\lambda,\\mu,\\mathbf a,\\mathbf b$ in the real solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week10.tex · Practice 1 · Practice 1, guiding questions 1–2",
+    "credit": ""
+  },
+  {
+    "id": "system-defective",
+    "topic": "systems",
+    "unit": "repeated-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}7 & 1\\\\-4 & 3\\end{bmatrix}\\mathbf x$. Find the eigenvalue, an eigenvector and a generalized eigenvector, then write the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week10.tex · Practice 2 · Practice 2, guiding questions 1–3",
+    "credit": ""
+  },
+  {
+    "id": "system-jordan",
+    "topic": "systems",
+    "unit": "repeated-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}-2 & 1\\\\0 & -2\\end{bmatrix}\\mathbf x$. Find the eigenvalue, an eigenvector and a generalized eigenvector, then write the general solution.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week9.tex · Practice · Practice, guiding questions 1–3",
+    "credit": ""
+  },
+  {
+    "id": "pset-system-1",
+    "topic": "systems",
+    "unit": "real-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}3 & -2\\\\2 & -2\\end{bmatrix}\\mathbf x$. Describe the behavior of the general solution as $t\\to\\infty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.2(a)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "pset-system-2",
+    "topic": "systems",
+    "unit": "real-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}2 & -1\\\\3 & -2\\end{bmatrix}\\mathbf x$. Describe the behavior of the general solution as $t\\to\\infty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.2(b)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "pset-system-3",
+    "topic": "systems",
+    "unit": "real-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}1 & 1 & 2\\\\1 & 2 & 1\\\\2 & 1 & 1\\end{bmatrix}\\mathbf x$. Describe the behavior of the general solution as $t\\to\\infty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.2(c)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "pset-system-4",
+    "topic": "systems",
+    "unit": "complex-systems",
+    "prompt": "Solve $\\mathbf x'=\\begin{bmatrix}1 & 0 & 0\\\\2 & 1 & -2\\\\3 & 2 & 1\\end{bmatrix}\\mathbf x$. Describe the behavior of the general solution as $t\\to\\infty$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.2(d)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "eigen-1",
+    "topic": "systems",
+    "unit": "matrices",
+    "prompt": "Find the eigenvalues and eigenvectors of $A=\\begin{bmatrix}3 & 1\\\\1 & 3\\end{bmatrix}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week10.tex · Practice Problems / Eigenvalues and Eigenvectors · 3",
+    "credit": ""
+  },
+  {
+    "id": "eigen-2",
+    "topic": "systems",
+    "unit": "matrices",
+    "prompt": "Find the eigenvalues and eigenvectors of $A=\\begin{bmatrix}2 & 1\\\\0 & 2\\end{bmatrix}$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "S26_Section_Notes/Week10.tex · Practice Problems / Eigenvalues and Eigenvectors · 4",
+    "credit": ""
+  },
+  {
+    "id": "fundamental-recover",
+    "topic": "systems",
+    "unit": "fundamental-matrix",
+    "prompt": "For $\\mathbf x_1=(t^2,3t)^T$, $\\mathbf x_2=(-t^3,2t^2)^T$, calculate the Wronskian, state where they form a fundamental set, and find $P(t)$ for $\\mathbf x'=P(t)\\mathbf x$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week8.tex · Basic Concepts of 1st Order System Practice · 2(a–b), Quiz 3, 2023; hint after (b)",
+    "credit": "2023 Quiz 3",
+    "hint": "Determine the size of $P(t)$, then use both vector solutions to find its entries."
+  },
+  {
+    "id": "nonlinear-1",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=y-x^2$, $y'=1-y$, find all critical points, evaluate the Jacobian at each, and write each local linearized system.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week11.tex · Practice: (*) requires preview knowledge / Problem 1 · Problem 1, all subparts",
+    "credit": ""
+  },
+  {
+    "id": "nonlinear-2",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=x(1-y)$, $y'=y(x-2)$, find all critical points and compute the Jacobian at each. Use its eigenvalues to classify each nonlinear equilibrium as far as possible.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week11.tex · Practice: (*) requires preview knowledge / Problem 2 · Problem 2, all subparts",
+    "credit": ""
+  },
+  {
+    "id": "nonlinear-3",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=y+x(1-x^2-y^2)$, $y'=-x+y(1-x^2-y^2)$, find all critical points and evaluate the Jacobian at each. Linearize near the origin and interpret what this says about the nonlinear equilibrium.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week11.tex · Practice: (*) requires preview knowledge / Problem 3 · Problem 3, all subparts",
+    "credit": ""
+  },
+  {
+    "id": "nonlinear-4",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=y(2-x)$, $y'=x(1-y)$, find all critical points and the general Jacobian. Linearize at each point and discuss the local behavior.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week11.tex · Practice: (*) requires preview knowledge / Problem 4 · Problem 4, all subparts",
+    "credit": ""
+  },
+  {
+    "id": "nonlinear-5",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=y-\\sin x$, $y'=-x-y^3$, find all equilibria and evaluate the Jacobian at each.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F25_Section_Notes/Week11.tex · Practice: (*) requires preview knowledge / Problem 5 · Problem 5, all subparts",
+    "credit": ""
+  },
+  {
+    "id": "nonlinear-quiz",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=(x+y)(1-y+x)$, $y'=x(y-1)$, find all critical points and linearize at each. Use the linearization to classify type and stability when possible. Explain any inconclusive case.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week13.tex · Non-Linear Review / F23 Non-Linear Quiz Practice · F23 Non-Linear Quiz Practice",
+    "credit": "Fall 2023 nonlinear quiz"
+  },
+  {
+    "id": "nonlinear-pilot",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=2xy+y-x$, $y'=x^2-(y^2+y+4x)$, verify that the origin is an equilibrium and that local linearization applies there. Use the linearized equilibrium to classify the type and stability of the origin as far as possible.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_Packet.pdf · §3.4, PILOT 11, 1",
+    "credit": "Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "nonlinear-saddle",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=y$, $y'=x+2x^3$, show that the origin is a saddle. Sketch the phase portrait of the linearized system and show that all its trajectories tending to the origin as $t\\to+\\infty$ lie on $y=-x$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_Packet.pdf · §3.4, PILOT 11, 2(a,b)",
+    "credit": "Fall 2023 PILOT HPLs"
+  },
+  {
+    "id": "pset-nonlinear-a",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=(2+x)(y-x)$, $y'=(4-x)(y+x)$, find all critical points. Linearize and classify each as far as possible, then draw a plausible phase portrait.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.3(a)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "pset-nonlinear-b",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=(1+x)\\sin y$, $y'=1-x-\\cos y$, find all critical points, linearize and classify each as far as possible, and draw a plausible phase portrait.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.3(b)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "pset-nonlinear-c",
+    "topic": "nonlinear",
+    "unit": "linearization",
+    "prompt": "For $x'=-2x-y-x(x^2+y^2)$, $y'=x-y+y(x^2+y^2)$, find all critical points. Linearize and classify each as far as possible, then draw a plausible phase portrait.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §3.3(c)",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "cycle-pset",
+    "topic": "nonlinear",
+    "unit": "cycles",
+    "prompt": "For $r'=r(r-1)(r-3)$, $\\theta'=1$, find all periodic solutions and all limit cycles, and determine their stability.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "Diff_Eq_Final_Review_PSet.pdf · §4.1",
+    "credit": "Zach Bahar and Daniel Chen · Final-review problem collection"
+  },
+  {
+    "id": "source-partial-derivatives",
+    "topic": "basics",
+    "unit": "calculus",
+    "prompt": "Find the partial derivatives of $f(x,y)=x^2y+e^y$.",
+    "solution": "Holding $y$ fixed gives $f_x=2xy$. Holding $x$ fixed gives $f_y=x^2+e^y$.",
+    "solution_kind": "full",
+    "source": "F25_Section_Notes/Week1.tex · Math Pre-requisites / Partial Derivatives · Example",
+    "credit": "",
+    "entry_kind": "worked-example"
+  },
+  {
+    "id": "source-exponential-field",
+    "topic": "basics",
+    "unit": "classification",
+    "prompt": "Describe the direction field for $y'=y$ and find its integral curves.",
+    "solution": "At $(t,y)$ the slope equals $y$. It is zero on $y=0$, positive above the axis, and negative below it. The segments become steeper as $|y|$ grows.\n\nFor $y\\ne0$, separate and integrate to obtain $\\ln|y|=t+C$. The curves $y=Ce^t$ are tangent to the field everywhere. Setting $C=0$ also includes the horizontal equilibrium.",
+    "solution_kind": "full",
+    "source": "S26_Section_Notes/Week3.tex · 1st Order ODE Review / Example: Direction Field and Integral Curve · Direction Field and Integral Curve",
+    "credit": "",
+    "entry_kind": "worked-example"
+  },
+  {
+    "id": "source-equilibrium-product",
+    "topic": "qualitative",
+    "unit": "phase-lines",
+    "prompt": "Find the equilibrium values in the autonomous equation $z'=z(1-z)$.",
+    "solution": "",
+    "solution_kind": "none",
+    "source": "F24_Section_Notes/Week4.tex · Review / Autonomous ODEs, Phase Line, Stability · Equilibrium example",
+    "credit": "",
+    "entry_kind": "exercise"
+  },
+  {
+    "id": "source-exact-potential",
+    "topic": "first-order",
+    "unit": "exact",
+    "prompt": "Solve $(2xy+y^2)\\,dx+(x^2+2xy)\\,dy=0$.",
+    "solution": "With $M=2xy+y^2$ and $N=x^2+2xy$, the partial derivatives are $M_y=N_x=2x+2y$, so the equation is exact. Integrating $M$ with respect to $x$ gives\n\n$$\\phi=x^2y+xy^2+h(y).$$\n\nMatch $\\phi_y=x^2+2xy+h'(y)$ to $N$. Thus $h'(y)=0$, and the level curves giving the implicit solution are $x^2y+xy^2=C$.",
+    "solution_kind": "full",
+    "source": "S25_Section_Notes/Week2.tex · Lecture Content Review / Exact Diff Eqs · Worked exact-equation example",
+    "credit": "",
+    "entry_kind": "worked-example"
+  },
+  {
+    "id": "source-system-conversion",
+    "topic": "systems",
+    "unit": "conversion",
+    "prompt": "Write $y''+2y'+y=t$ as two first-order equations.",
+    "solution": "Put $x_1=y$ and $x_2=y'$. Then $x_1'=x_2$. Isolate $y''$ and substitute to get the second equation:\n\n$$x_1'=x_2,\\qquad x_2'=-x_1-2x_2+t.$$",
+    "solution_kind": "full",
+    "source": "F24_Section_Notes/Week9.tex · System Basics / Reduction from Higher Order to a System · Worked conversion example",
+    "credit": "",
+    "entry_kind": "worked-example"
+  }
+]

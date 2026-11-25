@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A printable Differential Equations formula sheet and Daniel Chen’s topic notes, worked examples, and original practice problems for AS.110.302.">
+<meta name="theme-color" content="#fafaf6">
+<title>Differential Equations · Daniel Chen</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('enhanced');</script>
+<script defer src="assets/app.js"></script>
+</head>
+<body data-view="formula-sheet">
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="#formula-sheet" aria-label="Differential Equations, formula sheet"><span class="mark" aria-hidden="true">@@BRAND_MATH@@</span><span>Differential Equations</span></a>
+<nav class="primary-nav" aria-label="Primary"><a href="#formula-sheet" data-dest="formula-sheet" aria-current="page">Formula Sheet</a><a href="#notes" data-dest="notes">Topics &amp; Practice</a></nav>
+<button class="search-trigger js-only" type="button" id="open-search" aria-label="Search the reference" aria-haspopup="dialog">@@SEARCH@@<span>Search</span><kbd>/</kbd></button>
+</div></header>
+<main id="content" tabindex="-1">@@PAGES@@</main>
+<footer class="site-footer"><span>Daniel Chen <span aria-hidden="true">·</span> AS.110.302</span><a href="#formula-sheet">Formula Sheet</a></footer>
+<dialog id="search" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the reference</h2><button type="button" id="close-search" aria-label="Close search">×</button></div>
+<div class="search-field">@@SEARCH@@<input id="query" type="search" aria-label="Search for a topic, method, formula, or problem" placeholder="Topic, method, formula, or problem" autocomplete="off" spellcheck="false"></div>
+<p id="search-status" role="status">Search formulas, notes, and original problems.</p><div id="results"></div></dialog>
+<dialog id="print-options" aria-labelledby="print-title"><form id="print-form">
+<div class="dialog-top"><h2 id="print-title">Print formulas</h2><button type="button" id="close-print" aria-label="Close print options">×</button></div>
+<label class="print-field">Topics<select id="print-topic"><option value="all">All topics</option>@@PRINT_TOPICS@@</select></label>
+<label class="print-field" id="material-field">Include<select id="print-material"><option value="notes">Notes only</option><option value="combined">Notes and practice problems</option><option value="practice">Practice problems only</option></select></label>
+<label class="answer-field" id="answers-field"><input type="checkbox" id="print-answers"> Include available solutions and hints</label>
+<div class="print-actions"><button type="button" id="cancel-print">Cancel</button><button type="submit">Print</button></div>
+</form></dialog>
+<script type="application/json" id="legacy-links">@@LEGACY@@</script>
+<script type="application/json" id="search-index">@@INDEX@@</script>
+</body></html>
