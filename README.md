@@ -1,10 +1,8 @@
-# Differential Equations Review
+# Differential Equations Course Notes Website
 
-Daniel Chen’s review for AS.110.302 opens on the Formula Sheet. Topics & Practice contains ten chapters with searchable notes, original practice problems, and selected worked solutions.
+Section notes & exam review for JHU Math AS.110.302 Differential Equations & Applications. Topics & Practice contains ten chapters with searchable notes, original practice problems, and selected worked solutions.  
 
-## Preview the included site
-
-Open `dist/index.html` in a modern browser with MathML support. The included distribution is the complete version 6 reader, from source commit `c634fc0c05071a5d40ee5df134947f1e841579be`.
+Compiled from typed TA section notes from Fall 2024 - Fall 2026. Built with ChatGPT-6.2 Astra. Double check all listed information for accuracy.
 
 ## Edit the review
 
